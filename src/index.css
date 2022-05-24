@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+button,
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input {
+  height: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+:focus-visible {
+  outline: 1px solid navy;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.leftAlign {
+  text-align: left;
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+.column {
+  width: 100%;
+  padding: 15px;
+}
+
+.question {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(2);
+}
+
+.marginLeftAndRight {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.btnSubmit {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+.verticalLine {
+  height: 80%;
+  width: 1px;
+  background-color: black;
+  top: 80px;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+}
+
+.horizontalLine {
+  display: none;
+}
+
+fieldset {
+  border: none;
+}
+
+.questionSet {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.marTop40 {
+  margin-top: 40px;
+}
+
+.sr-only {
+  color: transparent;
+}
+
+.marBottomHalf {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .horizontalLine {
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+  }
+}
