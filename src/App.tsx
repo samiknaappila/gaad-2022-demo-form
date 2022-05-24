@@ -128,7 +128,7 @@ function App() {
                   <span className="madatoryStar" aria-hidden={true}>*</span>
                 </legend>
 
-                <div className="question">
+                <div role="radiogroup" className="question">
 
                   <input type="radio" id="kitties" name="favAnimal" value="Cats" required />
                   <label className="marginLeftAndRight" htmlFor="kitties">
